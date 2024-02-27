@@ -1,54 +1,37 @@
-<html>
-<head></head>
-<title>wikipedia</title>
-<body text="purple" bgcolor="blanchedalmond">
-    
-<nav role="navigation">
-    <div id="menuToggle">
-      <!--
-      A fake / hidden checkbox is used as click reciever,
-      so you can use the :checked selector on it.
-      -->
-      <input type="checkbox" />
-      
-      <!--
-      Some spans to act as a hamburger.
-      
-      They are acting like a real hamburger,
-      not that McDonalds stuff.
-      -->
-      <span></span>
-      <span></span>
-      <span></span>
-      
-      <!--
-      Too bad the menu has to be inside of the button
-      but hey, it's pure CSS magic.
-      -->
-      <ul id="menu">
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>About</li></a>
-        <a href="#"><li>Info</li></a>
-        <a href="#"><li>Contact</li></a>
-        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
-      </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="registrationForm">
+            <h2>Library Registration</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="membership">Membership Type:</label>
+                <select id="membership" name="membership">
+                    <option value="standard">Standard</option>
+                    <option value="premium">Premium</option>
+                </select>
+            </div>
+            <button type="submit">Register</button>
+        </form>
     </div>
-  </nav>
-<h1>Government Polytechnic Nagpur</h1><br>
-<body><marquee bgcolor="pink" loop="10" scrollamount="8" width="200%">Admissions open for 1st year and direct 2nd year. Second cap round starts from August 10,2023</marquee></body><br>
-<font face="cambria" size="5">
-<br><img src="C:\Users\ambar\OneDrive\Pictures\gp hd.png" width="1500" length="410"/><br>
-It was founded on 14 July 1914 as the Government Engineering School. At its commencement the school had 16 students on roll and was located in the Victoria Science College (now the Institute of Science) in Nagpur. During its first year the school provided courses in Civil Engineering & Mechanical Engineering up to diploma standard. Later in 1915 Automobile Engineering Course was also established which vias subsequently converted into Post Diploma in Automobile Engineering. The institution has given birth to Engineering College presently known as Visvesvaraya National Institute of Technology, Nagpur(VNIT). The school was expanding rapidly & from 16 students enrolled in 1914 increased to nearly 2000 in current year and Govt. Engineering School converted to Government Polytechnic, Nagpur.
-<br>
-<ul><h3>Programmes Available:</h3>
-<li>Computer Engineering</li>
-<li>Civil Engineering</li>
-<li>Mechanical Engineering</li>
-<li>Information and Technology Engineering</li>
-<li>Mechtronics Engineering</li>
-<li>Electronics and Telecommunication Engineering</li>
-<li>Electrical Engineering</li><br>
-</ul>
-</font>
+    <script src="script.js"></script>
 </body>
 </html>
